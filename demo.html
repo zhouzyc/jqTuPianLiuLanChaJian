@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <meta name="format-detection" content="telephone=no"/>
+
+
+    <!--使用webkit内核-->
+    <meta name="renderer" content="webkit">
+    <meta name="renderer" content="ie-stand">
+    <!--避免IE使用兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,IE=9" />
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+    <style>
+        body{margin: 0;padding: 0}
+        img{display: block;width: 100%;height: auto;}
+    </style>
+</head>
+<body>
+<div id="test">
+    <img  src="./1.jpg">
+    <img  src="./2.jpg">
+    <img  src="./3.jpg">
+    <img  src="./4.jpg">
+    <img  src="./5.jpg">
+    <img  src="./6.jpg">
+</div>
+</body>
+
+<script src="./jquery-2.1.1.js"></script>
+<script src="./fly_zomm_img.min.js"></script>
+<script>
+    /**
+     *  H5图标浏览插件
+     *  支持多图识别切换
+     *  支持手势放大,切换
+     */
+    $(function (){
+        $('#test').FlyZommImg();
+    })
+
+
+</script>
+</html>
